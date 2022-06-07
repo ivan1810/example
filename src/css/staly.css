@@ -1,0 +1,88 @@
+html {
+    font-family: Roboto;
+}
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+.header_wrapper {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.menu {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_item {
+    list-style-type: none;    
+}
+
+.menu_link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.slider {
+    position: relative;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.slider_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.slider_img {
+    width: 33.3%;  
+}
+
+.foto {
+    display: block;
+    width:100%;
+    max-height: 500px;
+}
+
+.about-us, .service, .price {
+    display: flex;
+    min-height: 500px;
+}
+
+.about-us_left, .service_right, .price_left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    background: url(../img/studia.jpg) center center/cover no-repeat;   
+}
+
+.about-us_right, .service_left, .price_right {
+    width: 50%;
+}
+
+/* .service_right {
+    background:url(../img/Lazer.jpg) center center/cover no-repeat;   
+} */
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 200px;
+    background-color: black;
+}
+
+.contact {
+    color:white;  
+}
