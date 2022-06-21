@@ -6,126 +6,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epi Ladies</title>
+    <script src="https://kit.fontawesome.com/b7a2c4b729.js" crossorigin="anonymous"></script>
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" href="css/staly.css">
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="header_wrapper">
+                <div class="icon">
+                    <div class="icon_name">Epi Ladies</div>
+                    <div class="icon_descr">Студія лазерної епіляції</div>
+                </div>
+                <ul class="menu">
+                    <li class="menu_item"><a href="#" class="menu_link">Про нас</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Послуги</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Прайс</a></li>
+                    <li class="menu_item"><a href="#" class="menu_link">Контакти</a></li>
+                </ul>
+                <a class="phone-up" href="tel:+380965180956">096 51-80-956</a>
+                <button data-modal="consultation" class="btn-up">Замовити</button>
+            </div>
+
+        </nav>
+    </header>
     <main>
-        <header>
-            <nav>
-                <div class="header_wrapper">
-                    <div class="icon">
-                        <div class="icon_name">Epi Ladies</div>
-                        <div class="icon_descr">Студія лазерної епіляції</div>
+        <section class="carousel">
+            <div class="carousel__inner">
+                <div class="carousel__image">
+                    <img class="carousel__foto" src="img/enter.jpg" alt="enter">
+                </div>
+                <div class="carousel__image">
+                    <img class="carousel__foto" src="img/leg.jpg" alt="leg">
+                </div>
+                <div class="carousel__image">
+                    <img class="carousel__foto" src="img/enter.jpg" alt="enter">
+                </div>
+            </div>
+        </section>
+        <section class="about-as">
+            <div class="about-as__studia">
+                <div class="about-as__studia_img"></div>
+                <p class="about-as__studia_descr">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum laboriosam, quasi harum ab
+                    dicta cum laudantium, dolores rem, nulla repellendus. Praesentium dolorum quo omnis itaque optio ex
+                    autem fugiat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laboriosam quae aut quibusdam
+                    cum ea nisi rem laborum, dignissimos quis recusandae earum alias ducimus inventore accusantium.
+                    Tempora ullam possimus non!
+                </p>
+            </div>
+            <div class="about-as__lazer">
+                <p class="about-as__lazer_descr">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum laboriosam, quasi harum ab
+                    dicta cum laudantium, dolores rem, nulla repellendus. Praesentium dolorum quo omnis itaque optio ex
+                    autem fugiat.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laboriosam quae aut quibusdam
+                    cum ea nisi rem laborum, dignissimos quis recusandae earum alias ducimus inventore accusantium.
+                    Tempora ullam possimus non!
+                </p>
+                <div class="about-as__lazer_img"></div>
+            </div>
+        </section>
+        <section class="catalog">
+            <h1 class="title">Каталог кремів</h1>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active">
+                    <h2>Зволожуючі</h2>
+                </li>
+                <li class="catalog__tab">
+                    <h2>Живильні</h2>
+                </li>
+                <li class="catalog__tab">
+                    <h2>Захисні</h2>
+                </li>
+            </ul>
+
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <img class="catalog-item__img" src="img/4ca08861e1f0007906a4ad829823a8db.webp" alt="cream">
+                    <div class="catalog-item__subtitle">Image Prevention+</div>
+                    <div class="catalog-item__descr">Зволожуючий крем на основі <br> для чутливої шкіри</div>
+                    <a class="catalog-item__link" href="#">Докладніше</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">670 грн</div>
+                            <div class="catalog-item__new-price">320 грн</div>
+                        </div>
+                        <button class="catalog-item__btn">Купити</button>
                     </div>
-                    <ul class="menu">
-                        <li class="menu_item"><a href="#" class="menu_link">Про нас</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Послуги</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Прайс</a></li>
-                        <li class="menu_item"><a href="#" class="menu_link">Контакти</a></li>
-                    </ul>
                 </div>
-                <a href="tel:+380969948911">096-994-8911</a>
-            </nav>
-        </header>
-        <section class="slider">
-            <div class="slider_wrapper">
-                <div class="slider_img">
-                    <img class="foto" src="img/studia.jpg" alt="studia">
-                </div>
-                <div class="slider_img">
-                    <img class="foto" src="img/leg.jpg" alt="leg">
-                </div>
-                <div class="slider_img">
-                    <img class="foto" src="img/enter.jpg" alt="enter">
-                </div>
-            </div>
-        </section>
-        <section class="about-us">
-            <div class="about-us_left">
 
-            </div>
-            <div class="about-us_right">
-                <p class="about-us_right_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Totam, et dolores neque optio consectetur suscipit quos impedit? Distinctio
-                    delectus quia totam ipsum ratione? Corporis repellendus id et velit aut unde?
-                </p>
-                <br><br>
-                <p class="about-us_right_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit!
-                </p>
-                <br><br>
-                <p class="about-us_right_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit!
-                </p>
-            </div>
-        </section>
-        <section class="service">
-            <div class="service_left">
-                <p class="service_left_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Totam, et dolores neque optio consectetur suscipit quos impedit? Distinctio
-                    delectus quia totam ipsum ratione? Corporis repellendus id et velit aut unde?
-                </p>
-                <br><br>
-                <p class="service_left_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit!
-                </p>
-                <br><br>
-                <p class="service_left_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit!
-                </p>
-            </div>
-            <div class="service_right">
-                <img src="img/Lazer.jpg" alt="lazer">
-            </div>
-        </section>
-        <section class="price">
-            <div class="price_left">
+                <div class="catalog-item">
+                    <img class="catalog-item__img" src="img/4ca08861e1f0007906a4ad829823a8db.webp" alt="cream">
+                    <div class="catalog-item__subtitle">Image Prevention+</div>
+                    <div class="catalog-item__descr">Зволожуючий крем на основі <br> для чутливої шкіри</div>
+                    <a class="catalog-item__link" href="#">Докладніше</a>
+                    <hr>
 
-            </div>
-            <div class="price_right">
-                <p class="price_right_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit! Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Totam, et dolores neque optio consectetur suscipit quos impedit? Distinctio
-                    delectus quia totam ipsum ratione? Corporis repellendus id et velit aut unde?
-                </p>
-                <br><br>
-                <p class="price_right_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit!
-                </p>
-                <br><br>
-                <p class="price_right_text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sapiente earum, accusantium quisquam
-                    dolor quaerat sint accusamus rerum eaque corrupti, numquam, maxime repudiandae officiis
-                    necessitatibus. Doloremque minima iste aperiam suscipit!
-                </p>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">670 грн</div>
+                            <div class="catalog-item__new-price">320 грн</div>
+                        </div>
+                        <button class="catalog-item__btn">Купити</button>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <img class="catalog-item__img" src="img/4ca08861e1f0007906a4ad829823a8db.webp" alt="cream">
+                    <div class="catalog-item__subtitle">Image Prevention+</div>
+                    <div class="catalog-item__descr">Зволожуючий крем на основі <br> для чутливої шкіри</div>
+                    <a class="catalog-item__link" href="#">Докладніше</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">670 грн</div>
+                            <div class="catalog-item__new-price">320 грн</div>
+                        </div>
+                        <button class="catalog-item__btn">Купити</button>
+                    </div>
+                </div>
             </div>
         </section>
+
         <footer class="footer">
-            <p class="contact">Контакти</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.285518256535!2d24.051113741555184!3d49.79949967621807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae9c1765b9a57%3A0x812b740541a07207!2zRXBpIExhZGllcy0g0YHRgtGD0LTRltGPINC70LDQt9C10YDQvdC-0Zcg0LXQv9GW0LvRj9GG0ZbRlw!5e0!3m2!1sru!2sua!4v1655300799623!5m2!1sru!2sua"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <div class="footer__info">
+                <address class="footer__addr">м.Львів пр-кт Червоної Калини 35в</address>
+                <a class="footer__phone" href="tel:+380965180956">8 (096) 51-80-956</a>
+
+                <div class="footer__social">
+                    <a href="#" class="footer__social-item">
+                        <img src="icons/instagram-square-brands.svg" alt="instagram" class="footer__social-img">
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <img src="icons/youtube-square-brands.svg" alt="" class="footer__social-img">
+                    </a>
+                    <a href="#" class="footer__social-item">
+                        <img src="icons/facebook-brands.svg" alt="" class="footer__social-img">
+                    </a>
+                </div>
+            </div>
         </footer>
+        <div class="overlay">
+            <div class="modal">
+                <div class="modal__close">&times;</div>
+                <h2 class="consultation_title">Отримати консультацію</h2>
+                <form action="#" class="feed-form">
+                    <input required type="text" placeholder="Ваше ім'я">
+                    <input required type="number" placeholder="Ваш номер">
+
+                    <button>Замовити консультацію</button>
+                </form>
+            </div>
+        </div>
     </main>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
