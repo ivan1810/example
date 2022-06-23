@@ -11,27 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
-    <link rel="stylesheet" href="css/staly.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="header_wrapper">
+            <div class="header">
                 <div class="icon">
-                    <div class="icon_name">Epi Ladies</div>
-                    <div class="icon_descr">Студія лазерної епіляції</div>
+                    <div class="icon__name">Epi Ladies</div>
+                    <div class="icon__descr">Студія лазерної епіляції</div>
                 </div>
-                <ul class="menu">
-                    <li class="menu_item"><a href="#" class="menu_link">Про нас</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Послуги</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Прайс</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Контакти</a></li>
+                <ul class="header__menu">
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">Про нас</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">Послуги</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">Прайс</a></li>
+                    <li class="header__menu_item"><a href="#" class="header__menu_link">Контакти</a></li>
                 </ul>
-                <a class="phone-up" href="tel:+380965180956">096 51-80-956</a>
-                <button data-modal="consultation" class="btn-up">Замовити</button>
+                <a class="header__phone" href="tel:+380965180956">096 51-80-956</a>
+                <button data-modal="consultation" class="header__btn">Замовити</button>
             </div>
-
         </nav>
     </header>
     <main>
@@ -44,7 +43,7 @@
                     <img class="carousel__foto" src="img/leg.jpg" alt="leg">
                 </div>
                 <div class="carousel__image">
-                    <img class="carousel__foto" src="img/enter.jpg" alt="enter">
+                    <img class="carousel__foto" src="img/photo_2022-06-23_18-51-11.jpg" alt="enter">
                 </div>
             </div>
         </section>
@@ -73,15 +72,15 @@
             </div>
         </section>
         <section class="catalog">
-            <h1 class="title">Каталог кремів</h1>
+            <h1 class="catalog__title">Каталог кремів</h1>
             <ul class="catalog__tabs">
-                <li class="catalog__tab catalog__tab_active">
+                <li class="catalog__tabs_tab catalog__tabs_active">
                     <h2>Зволожуючі</h2>
                 </li>
-                <li class="catalog__tab">
+                <li class="catalog__tabs_tab">
                     <h2>Живильні</h2>
                 </li>
-                <li class="catalog__tab">
+                <li class="catalog__tabs_tab">
                     <h2>Захисні</h2>
                 </li>
             </ul>
@@ -99,7 +98,7 @@
                             <div class="catalog-item__old-price">670 грн</div>
                             <div class="catalog-item__new-price">320 грн</div>
                         </div>
-                        <button class="catalog-item__btn">Купити</button>
+                        <button data-modal="consultation" class="catalog-item__btn">Купити</button>
                     </div>
                 </div>
 
@@ -115,7 +114,7 @@
                             <div class="catalog-item__old-price">670 грн</div>
                             <div class="catalog-item__new-price">320 грн</div>
                         </div>
-                        <button class="catalog-item__btn">Купити</button>
+                        <button data-modal="consultation" class="catalog-item__btn">Купити</button>
                     </div>
                 </div>
 
@@ -131,7 +130,7 @@
                             <div class="catalog-item__old-price">670 грн</div>
                             <div class="catalog-item__new-price">320 грн</div>
                         </div>
-                        <button class="catalog-item__btn">Купити</button>
+                        <button data-modal="consultation" class="catalog-item__btn">Купити</button>
                     </div>
                 </div>
             </div>
@@ -144,19 +143,19 @@
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
-            <div class="footer__info">
-                <address class="footer__addr">м.Львів пр-кт Червоної Калини 35в</address>
-                <a class="footer__phone" href="tel:+380965180956">8 (096) 51-80-956</a>
+            <div class="footer-info">
+                <address class="footer-info__addr">м.Львів пр-кт Червоної Калини 35в</address>
+                <a class="footer-info__phone" href="tel:+380965180956">8 (096) 51-80-956</a>
 
-                <div class="footer__social">
-                    <a href="#" class="footer__social-item">
-                        <img src="icons/instagram-square-brands.svg" alt="instagram" class="footer__social-img">
+                <div class="footer-info__social">
+                    <a href="#" class="footer-info__social_item">
+                        <img src="icons/instagram-square-brands.svg" alt="instagram">
                     </a>
-                    <a href="#" class="footer__social-item">
-                        <img src="icons/youtube-square-brands.svg" alt="" class="footer__social-img">
+                    <a href="#" class="footer-info__social_item">
+                        <img src="icons/youtube-square-brands.svg" alt="youtube">
                     </a>
-                    <a href="#" class="footer__social-item">
-                        <img src="icons/facebook-brands.svg" alt="" class="footer__social-img">
+                    <a href="#" class="footer-info__social_item">
+                        <img src="icons/facebook-brands.svg" alt="facebook">
                     </a>
                 </div>
             </div>
@@ -166,10 +165,10 @@
                 <div class="modal__close">&times;</div>
                 <h2 class="consultation_title">Отримати консультацію</h2>
                 <form action="#" class="feed-form">
-                    <input required type="text" placeholder="Ваше ім'я">
-                    <input required type="number" placeholder="Ваш номер">
+                    <input class="feed-form__input" required type="text" placeholder="Ваше ім'я">
+                    <input class="feed-form__input" required type="number" placeholder="Ваш номер">
 
-                    <button>Замовити консультацію</button>
+                    <button class="feed-form__btn">Замовити консультацію</button>
                 </form>
             </div>
         </div>

@@ -3,11 +3,12 @@ $(document).ready(function () {
         speed: 1200,
         adaptiveHeight: true,
         arrows: false,
-        slidesToShow: 2,
+        slidesToShow: 1,
         // arrows: false,
         // dots: true
         autoplay: true,
         autoplaySpeed: 2000
+
     });
 
     $('[data-modal=consultation]').on('click', function () {
