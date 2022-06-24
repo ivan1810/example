@@ -291,21 +291,42 @@ html {
   }
   
   .modal {
-	position: relative;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 	background-color: rgb(209, 196, 196);
 	width: 475px;
-	height: 360px;
+	min-height: 360px;
 	margin: 0 auto;
+	padding: 10px;
+	&__title {
+		font-size: 25px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	&__subtitle {
+		text-align: center;
+		font-size: 18px;
+	}
+	&__close {
+		position: absolute;
+		right: -35px;
+		font-size: 40px;
+		top: -9px;
+		color: #8466ce;
+		cursor: pointer;
+	}
+	&__mini {
+		min-height: 100px;
+		
+	}
+  }
+  #consultation, #order, #thanks {
+	display: none;
   }
   
-  .modal__close {
-	position: absolute;
-	right: -35px;
-	font-size: 40px;
-	top: -9px;
-	color: #8466ce;
-	cursor: pointer;
-  }
 
   button {
 	height: 50px;
@@ -317,12 +338,6 @@ html {
 	font-weight: 400;
   }
 
-  .consultation_title {
-	font-size: 30px;
-	text-align: center;
-	text-transform: uppercase;
-  }
-  
   .feed-form {
 	display: flex;
 	flex-direction: column;

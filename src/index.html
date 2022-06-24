@@ -161,15 +161,32 @@
             </div>
         </footer>
         <div class="overlay">
-            <div class="modal">
+            <div class="modal" id="consultation">
                 <div class="modal__close">&times;</div>
-                <h2 class="consultation_title">Отримати консультацію</h2>
+                <div class="modal__title">Отримати консультацію</div>
                 <form action="#" class="feed-form">
                     <input class="feed-form__input" required type="text" placeholder="Ваше ім'я">
                     <input class="feed-form__input" required type="number" placeholder="Ваш номер">
 
                     <button class="feed-form__btn">Замовити консультацію</button>
                 </form>
+            </div>
+            <div class="modal" id="order">
+                <div class="modal__close">&times;</div>
+                <div class="modal__title">Ваше замовлення:</div>
+                <div class="modal__subtitle">крем Image Prevention+</div>
+                <form action="#" class="feed-form">
+                    <input class="feed-form__input" required type="text" placeholder="Ваше ім'я">
+                    <input class="feed-form__input" required type="number" placeholder="Ваш номер">
+
+                    <button class="feed-form__btn">Купити</button>
+                </form>
+            </div>
+            <div class="modal modal__mini" id="thanks">
+                <div class="modal__close">&times;</div>
+                <div class="modal__title">Дякуємо за замовлення!</div>
+                <div class="modal__subtitle">Ми зателофонуємо Вам найближчим часом</div>
+
             </div>
         </div>
     </main>
