@@ -11,10 +11,16 @@ $(document).ready(function () {
 
     });
 
+    //Modal
+
     $('[data-modal=consultation]').on('click', function () {
-        $('.overlay').fadeIn('slow');
+        $('.overlay, #consultation').fadeIn('slow');
     });
     $('.modal__close').on('click', function () {
-        $('.overlay').fadeOut('slow')
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+
+    });
+    $('.catalog-item__btn').on('click', function () {
+        $('.overlay, #order').fadeIn('slow')
     });
 });
