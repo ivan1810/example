@@ -129,28 +129,30 @@ html {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		h2 {
+		
+	}
+	&__tab {
+		width: 220px;
+		height: 50px;
+		border: 2px solid #d0d0d0;
+		color: #6b6b6b;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 48px;
+		transform: skewX(-25deg);
+		margin: 0 5px;
+		cursor: pointer;
+		transition: 0.5s all;
+
+		div {
 			transform: skewX(25deg);
 		}
-		&_tab {
-			width: 220px;
-			height: 50px;
-			border: 2px solid #d0d0d0;
-			color: #6b6b6b;
-			text-align: center;
-			text-transform: uppercase;
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 48px;
-			transform: skewX(-25deg);
-			margin: 0 5px;
-			cursor: pointer;
-			transition: 0.5s all;
-				  
-			&:hover {
-				box-shadow: 3px 3px 20px red;
-				border: none;
-			}
+				
+		&:hover {
+			box-shadow: 3px 3px 20px red;
+			border: none;
 		}
 		&_active {
 			color: white;
@@ -158,15 +160,19 @@ html {
 			border: none;
 		}
 	}
-
-  }
 	
-  .catalog__content {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 62vw;
-	margin: 0 auto;
+	
+	&__content {
+		display: none;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 62vw;
+		margin: 0 auto;
+		&_active {
+			display: flex;
+		}
+	}
+
   }
 	  
   .catalog-item {
