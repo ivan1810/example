@@ -13,15 +13,21 @@ $(document).ready(function () {
 
     //Modal
 
-    $('[data-modal=consultation]').on('click', function () {
-        $('.overlay, #consultation').fadeIn('slow');
+    $('[data-modal=consultation]').on('click', function () { //звертаємось до data
+        $('.overlay, #consultation').fadeIn('slow'); //покажемо клас і id
     });
-    $('.modal__close').on('click', function () {
-        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    $('.modal__close').on('click', function () { //хрестик
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow') //закриє їх
 
     });
-    $('.catalog-item__btn').on('click', function () {
-        $('.overlay, #order').fadeIn('slow')
+    // $('.catalog-item__btn').on('click', function () {//кнопки товарів
+    //     $('.overlay, #order').fadeIn('slow')
+    // });
+    $('.catalog-item__btn').each(function (i) {
+        $(this).on('click', function () { //для поточної кнопки
+            $('#order .modal__subtitle').text($('.catalog-item__subtitle ').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        })
     });
 
     //Tabs open own tab(1-6,2-1,3-2)
@@ -65,4 +71,19 @@ $(document).ready(function () {
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
 
+    //Validate form
+    $('#consultation form').validate({
+        rules: {
+            name: "required",
+            phone: "required"
+        }
+    });
+    $('#order form').validate({
+        rules: {
+            name: "required",
+            phone: "required"
+        }
+    });
+
+    $('input[name=phone]').mask("8 (999) 999-99-99")
 });
