@@ -85,5 +85,38 @@ $(document).ready(function () {
         }
     });
 
-    $('input[name=phone]').mask("8 (999) 999-99-99")
+    //плагіт валідатора
+    $('input[name=phone]').mask("8 (999) 999-99-99");
+
+    // ajax
+    // $('form').submit(function () {
+    //     e.preventDefault();
+
+    //     if (!$(this).valid()) {
+    //         return;
+    //     }
+    //     $.ajax({
+    //         name: 'POST',
+    //         url: 'mailer/smart.php',
+    //         data: $(this).serialize()
+    //     }).done(function {
+    //         $(this).find('input').val('');
+
+
+    //         $('form').trigger('reset');
+    //     });
+    //     return false;
+    // });
+
+
+    //scroll and pageup
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1000) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
 });

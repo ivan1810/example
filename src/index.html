@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <div class="header">
+            <div id="up" class="header">
                 <div class="icon">
                     <div class="icon__name">Epi Ladies</div>
                     <div class="icon__descr">Студія лазерної епіляції</div>
@@ -34,7 +34,7 @@
         </nav>
     </header>
     <main>
-        <section class="carousel">
+        <div class="carousel">
             <div class="carousel__inner">
                 <div class="carousel__image">
                     <img class="carousel__foto" src="img/enter.jpg" alt="enter">
@@ -46,8 +46,8 @@
                     <img class="carousel__foto" src="img/photo_2022-06-23_18-51-11.jpg" alt="enter">
                 </div>
             </div>
-        </section>
-        <section class="about-as">
+        </div>
+        <div class="about-as">
             <div class="about-as__studia">
                 <div class="about-as__studia_img"></div>
                 <p class="about-as__studia_descr">
@@ -70,7 +70,7 @@
                 </p>
                 <div class="about-as__lazer_img"></div>
             </div>
-        </section>
+        </div>
         <section class="catalog">
             <div class="catalog__container">
                 <h1 class="catalog__title">Каталог кремів</h1>
@@ -351,13 +351,15 @@
                         </div>
                     </div>
                 </div>
+                <a href="#" class="pageup"><img src="icons/circle-chevron-up-solid.svg" alt="chevron-up-solid"></a>
+
             </div>
         </section>
 
         <footer class="footer">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2575.285518256535!2d24.051113741555184!3d49.79949967621807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae9c1765b9a57%3A0x812b740541a07207!2zRXBpIExhZGllcy0g0YHRgtGD0LTRltGPINC70LDQt9C10YDQvdC-0Zcg0LXQv9GW0LvRj9GG0ZbRlw!5e0!3m2!1sru!2sua!4v1655300799623!5m2!1sru!2sua"
-                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                width="100%" height="400" style="border:0; z-index:-1;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
 
@@ -372,7 +374,7 @@
                     <a href="#" class="footer-info__social_item">
                         <img src="icons/youtube-square-brands.svg" alt="youtube">
                     </a>
-                    <a href="#" class="footer-info__social_item">
+                    <a href="#up" class="footer-info__social_item">
                         <img src="icons/facebook-brands.svg" alt="facebook">
                     </a>
                 </div>

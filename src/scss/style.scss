@@ -1,5 +1,6 @@
 html {
 	font-family: Roboto;
+	scroll-behavior: smooth;
   }
   
 * {
@@ -44,7 +45,7 @@ html {
 		color: white;
 		top: 46%;
 		text-transform: uppercase;		
-		background-color: #8466ce;
+		background-color: red;
 		cursor:pointer;
 	}
   }
@@ -423,4 +424,16 @@ html {
 		cursor: pointer;
 		background-color: #8466ce;
 	} 
+  }
+  .pageup {
+	display: none;
+	position: fixed;
+	width: 30px;
+	height: 30px;
+	bottom: 80px;
+	right: 40px;
+	z-index: 1;
+	img {
+		width: 100%;
+	}
   }
